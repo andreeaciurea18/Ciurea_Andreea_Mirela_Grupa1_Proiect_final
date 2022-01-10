@@ -74,17 +74,42 @@
 <!-- register form section starts  -->
 <section class="register">
 
-    <form action="">
-        <h3>register now</h3>
-        <input type="text" name="" placeholder="enter your name" id="1" class="box">
-        <input type="email" name="" placeholder="enter your email" id="2" class="box">
-        <input type="password" name="" placeholder="enter your password" id="3" class="box">
-        <input type="password" name="" placeholder="re-enter your password" id="4" class="box">
-        <input type="submit" value="register now" class="btn">
-        <p>already have an account?</p>
-        <a href="login.html" class="btn link">login now</a>
-    </form>
-
+    <div class="container">
+        <form id="form" class="form">
+            <h3>register now</h3>
+            <div class="form-control">
+                <label for="username">Username</label>
+                <input type="text" placeholder="andreeaciurea18" id="username" />
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error message</small>
+            </div>
+            <div class="form-control">
+                <label for="username">Email</label>
+                <input type="email" placeholder="andreeaciurea18@gmail.com" id="email" />
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error message</small>
+            </div>
+            <div class="form-control">
+                <label for="username">Password</label>
+                <input type="password" placeholder="Password" id="password"/>
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error message</small>
+            </div>
+            <div class="form-control">
+                <label for="username">Password check</label>
+                <input type="password" placeholder="Password two" id="password2"/>
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error message</small>
+            </div>
+            <input type="submit" value="register now" class="btn">
+            <p>already have an account?</p>
+            <a href="login.html" class="btn link">login now</a>
+        </form>
+    </div>
 </section>
 <!-- register form section ends  -->
 
@@ -116,6 +141,7 @@
 
 <!-- custom js file link  -->
 <script src="js/app.js"></script>
+<script src="js/formValidation.js"></script>
 
 </body>
 </html>

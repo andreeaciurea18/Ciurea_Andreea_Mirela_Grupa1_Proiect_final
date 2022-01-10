@@ -896,6 +896,86 @@ section {
   margin: 3rem 0;
 }
 
+.register .form-control,
+.login .form-control {
+  margin-bottom: 10px;
+  padding-bottom: 20px;
+  position: relative;
+}
+.register .form-control label,
+.login .form-control label {
+  display: inline-block;
+  margin-bottom: 5px;
+  font-size: 1.8rem;
+  color: #666;
+  cursor: pointer;
+  font-weight: bold;
+}
+.register .form-control input,
+.login .form-control input {
+  border: 2px solid #f0f0f0;
+  border-radius: 4px;
+  display: block;
+  font-family: inherit;
+  font-size: 14px;
+  padding: 10px;
+  width: 100%;
+}
+.register .form-control input:focus,
+.login .form-control input:focus {
+  outline: 0;
+  border-color: #777;
+}
+.register .form-control.success input,
+.login .form-control.success input {
+  border-color: #2ecc71;
+}
+.register .form-control.error input,
+.login .form-control.error input {
+  border-color: #e74c3c;
+}
+.register .form-control i,
+.login .form-control i {
+  visibility: hidden;
+  position: absolute;
+  top: 40px;
+  right: 10px;
+}
+.register .form-control.success i.fa-check-circle,
+.login .form-control.success i.fa-check-circle {
+  color: #2ecc71;
+  visibility: visible;
+}
+.register .form-control.error i.fa-exclamation-circle,
+.login .form-control.error i.fa-exclamation-circle {
+  color: #e74c3c;
+  visibility: visible;
+}
+.register .form-control small,
+.login .form-control small {
+  color: #e74c3c;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  visibility: hidden;
+}
+.register .form-control.error small,
+.login .form-control.error small {
+  visibility: visible;
+}
+.register .form button,
+.login .form button {
+  background-color: #8e44ad;
+  border: 2px solid #8e44ad;
+  border-radius: 4px;
+  color: #fff;
+  display: block;
+  font-family: inherit;
+  font-size: 16px;
+  padding: 10px;
+  margin-top: 20px;
+  width: 100%;
+}
 .register form,
 .login form {
   max-width: 40rem;
